@@ -95,12 +95,24 @@ body {
 
 #head-greeting {
   font-size: 25px !important;
-  color: rgba(255, 255, 255, 0.5) !important
+  color: rgba(255, 255, 255, 0.5) !important;
+  color: #65bcc7 !important;
 }
 
 a {
   text-decoration: none !important;
 }
+
+.nk-img {
+  /* background-color: red; */
+  /* height: 500px !important; */
+  /* object-fit: fill; */
+  background-color: black;
+  height: 100% !important;
+}
+
+
+
 
 hr {
   margin: 1rem 0;
