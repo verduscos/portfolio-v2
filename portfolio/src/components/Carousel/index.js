@@ -1,18 +1,34 @@
 import React, { useState } from "react";
+// import Carousel from 'react-bootstrap/Carousel'
 import "./Carousel.css"
 
 
 
-const Carousel = () => {
-  const Projects = ["one", "two", "three", 'four'];
-  const [project, setProject] = useState();
+function Projects() {
+  const Projects = ["FIRST", "SECOND", "THIRD", "FOURTH"];
+  const [index, setIndex] = useState(0);
 
+  // const handleSelect = (selectedIndex, e) => {
+  //   setIndex(selectedIndex);
+  // };
+
+  const timer = () => {
+    setInterval(() => {
+      if (index < Projects.length - 1) {
+        setIndex(index + 1);
+      } else {
+        setIndex(0);
+      }
+    }, [4000])
+  }
+
+  timer();
 
   return (
-    <div id="main">
-      <h1>{project}</h1>
+    <div>
+      {index}
     </div>
-  )
+  );
 }
 
-export default Carousel;
+export default Projects;
