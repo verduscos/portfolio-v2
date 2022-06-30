@@ -3,35 +3,23 @@ import React, { useEffect, useState } from "react";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa"
 import "./Carousel.css"
 
+import ProjectData from "./ProjectData";
+
 
 
 function Projects() {
-  const Projects = [
-    {
-      image: "https://picsum.photos/200/300"
-    },
-    {
-      image: "https://picsum.photos/200/301"
-    },
-    {
-      image: "https://picsum.photos/200/302"
-    },
-    {
-      image: "https://picsum.photos/200/303"
-    }
-  ];
-
   const [index, setIndex] = useState(0);
-  const length = Projects.length;
+  let currentProject = ProjectData[index];
+
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (index > Projects.length - 2) {
+      if (index > ProjectData.length - 2) {
         setIndex(0);
       } else {
         setIndex(index + 1);
       }
-    }, 1000);
+    }, 5000);
 
     return () => {
       if (interval) {
@@ -43,15 +31,9 @@ function Projects() {
   return (
     <div className="Carousel">
       <div className="inner">
-        <FaArrowAltCircleLeft />
-        {Projects.map(project => (
-          <div className="project">
-            <img src={project.image} alt="project image" />
-          </div>
-        ))}
-        <FaArrowAltCircleRight />
 
-        <img src={Projects[index].image} alt="project image" />
+        <p>{currentProject.title}</p>
+        <img src={currentProject.image} alt="project image" />
       </div>
     </div>
   );
