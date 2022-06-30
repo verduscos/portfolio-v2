@@ -1,6 +1,6 @@
 .Carousel {
-  height: 562.5px;
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
 }
 
 .inner {
@@ -13,20 +13,20 @@
   aspect-ratio: 16/9;
   object-fit: cover;
   width: inherit;
-  height: 100%;
+  height: 200px;
 }
 
 #overlay {
   color: transparent;
-  display: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 562.5px;
+  height: 200px;;
   letter-spacing:1px;
   position:absolute;
   transition-duration: .2s;
-  width: inherit;
+  max-width: 1000px;
+  width: 100%;
 }
 
 
@@ -48,4 +48,15 @@
 
 .project-btns > li {
   cursor: pointer;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .inner > img {
+    height: 562.5px;
+  }
+
+  #overlay  {
+    height: 562.5px;
+  }
 }

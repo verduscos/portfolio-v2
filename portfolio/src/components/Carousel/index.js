@@ -35,10 +35,10 @@ function Projects() {
 
       <ul className="project-btns">
         {indexes.map((index) => (
-          <li value={index} onClick={(e) => setCurrentIndex(index)}>
+          <li key={index} value={index} onClick={(e) => setCurrentIndex(index)}>
             {
               currentIndex === index ?
-                <IoIosRadioButtonOn size={25} /> :
+                <IoIosRadioButtonOn size={30} /> :
                 <IoIosRadioButtonOff size={20} />
             }
           </li>
