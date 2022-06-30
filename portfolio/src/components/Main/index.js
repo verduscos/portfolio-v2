@@ -5,6 +5,7 @@ import Carousel from "../Carousel";
 import About from "../About";
 import ProjectGallery from "../ProjectGallery";
 import Contact from "../Contact";
+import Footer from "../Footer";
 import "./Main.css";
 
 function Main() {
@@ -27,6 +28,7 @@ function Main() {
     <div id="main">
       <Nav />
       {content}
+      <Footer />
     </div>
   )
 }
