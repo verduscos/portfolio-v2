@@ -1,0 +1,18 @@
+#gallery {
+  margin: 100px 12px 80px 12px;
+  background-color: yellow;
+  /* height: 500px; */
+}
+
+#project-inner {
+  list-style-type: none;
+  padding: 0;
+}
+
+.project-tile {
+  margin-bottom: 15px;
+}
+
+.project-image {
+  width: 100%;
+}

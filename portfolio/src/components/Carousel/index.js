@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { IoIosRadioButtonOff, IoIosRadioButtonOn } from "react-icons/io"
-import ProjectData from "./ProjectData";
+import ProjectData from "../ProjectData";
 import "./Carousel.css"
 
 function Carousel() {
