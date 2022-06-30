@@ -5,6 +5,7 @@ import Carousel from "../Carousel";
 import About from "../About";
 import ProjectGallery from "../ProjectGallery";
 import Contact from "../Contact";
+import "./Main.css";
 
 function Main() {
   let location = useLocation();

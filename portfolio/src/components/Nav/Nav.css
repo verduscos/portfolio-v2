@@ -1,9 +1,15 @@
 #nav {
-  /* background-color: gray; */
-  width: fit-content;
+  /* background-color: blue; */
+  /* width: fit-content; */
+  /* display: flex; */
+  /* margin: 0 24px; */
+   margin: 0 12px;
 }
 
 #nav > ul {
+  /* background-color: rgb(223, 161, 161); */
+  display: flex;
+  justify-content: space-between;
   list-style-type: none;
   padding: 0;
 }
@@ -13,7 +19,7 @@
 }
 
 a {
-  color: rgb(23, 23, 23);
+  color: #525960;
   text-decoration: none !important;
 }
 

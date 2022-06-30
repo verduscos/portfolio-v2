@@ -1,19 +1,23 @@
-.Carousel {
+.carousel {
   width: 100%;
+  margin-top: 24px;
   max-width: 1000px;
 }
 
 .inner {
-  z-index: 10;
-  display: flex;
   width: inherit;
+}
+
+#carousel-title {
+  color: #525960;
+  font-size: 24px;
+  margin: 0 12px;
 }
 
 .inner > img {
   aspect-ratio: 16/9;
-  object-fit: cover;
+  object-fit: contain;
   width: inherit;
-  height: 200px;
 }
 
 #overlay {
@@ -28,8 +32,6 @@
   max-width: 1000px;
   width: 100%;
 }
-
-
 
 #overlay:hover {
   background-color: rgba(0, 0, 0, 0.5);

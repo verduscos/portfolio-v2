@@ -25,8 +25,9 @@ function Carousel() {
   })
 
   return (
-    <div className="Carousel">
+    <div className="carousel">
       <div className="inner">
+        <h1 id="carousel-title">Projects</h1>
         <div id="overlay">
           <p>{currentProject.title}</p>
         </div>
