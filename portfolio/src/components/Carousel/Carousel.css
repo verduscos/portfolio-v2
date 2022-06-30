@@ -3,7 +3,10 @@
   background-color: gray;
   /* width: 500px;
   height: 500px; */
+  height: 562.5px;
   width: 1000px;
+  height: auto;
+  /* margin: 0 auto; */
 }
 
 .inner {
@@ -24,8 +27,19 @@
   /* margin: 0 auto; */
   object-fit: cover;
   width: inherit;
+  height: 100%;
+  background-color: blue;
 }
 
+#overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 562.5px;
+  width: inherit;
+  position:absolute;
+}
 .project {
 
 }

@@ -31,6 +31,7 @@ function Projects() {
   return (
     <div className="Carousel">
       <div className="inner">
+        <div id="overlay">{currentProject.title}</div>
         <img src={currentProject.image} alt="project image" />
       </div>
     </div>
