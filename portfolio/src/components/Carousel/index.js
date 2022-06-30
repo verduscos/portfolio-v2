@@ -1,17 +1,12 @@
 import React, { useEffect, useState } from "react";
-// import Carousel from 'react-bootstrap/Carousel'
 import { IoIosRadioButtonOff, IoIosRadioButtonOn } from "react-icons/io"
-import "./Carousel.css"
-
 import ProjectData from "./ProjectData";
-
-
+import "./Carousel.css"
 
 function Projects() {
   const indexes = [0, 1, 2, 3, 4];
   const [currentIndex, setCurrentIndex] = useState(0);
   let currentProject = ProjectData[currentIndex];
-
 
   useEffect(() => {
     const interval = setInterval(() => {

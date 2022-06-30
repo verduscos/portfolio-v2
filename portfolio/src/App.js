@@ -1,18 +1,15 @@
-import logo from './logo.svg';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Carousel from './components/Carousel';
+import Projects from './components/Carousel';
 import './App.css';
 
 function App() {
   return (
-    <div>
-      <header>
-        <h1>
-          Header
-        </h1>
-      </header>
-
-      <Carousel />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' exact={true} element={<Projects/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
