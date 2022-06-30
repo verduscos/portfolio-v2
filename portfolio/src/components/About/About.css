@@ -13,6 +13,7 @@
   #about {
     max-width: 1000px;
     margin: 100px auto 75px auto;
+    padding: 0 12px;
   }
   #bio {
     display: flex;

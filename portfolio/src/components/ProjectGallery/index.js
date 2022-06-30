@@ -7,12 +7,11 @@ function ProjectGalley() {
 
   return (
     <div id="gallery">
-      <h1>Project Gallery</h1>
       <ul id="project-inner">
         {ProjectData.map(project => (
-          <li className="project-tile">
-            <Link to={`/project/`}>
-              <img className="project-image" src={project.image} alt={project.name} />
+          <li className={`project-tile item${project.id}`} key={project.id}>
+            <Link to={`/project/${project.id}`}>
+              <img className={`project-image ${project.id}`} src={project.image} alt={project.name} />
             </Link>
           </li>
         ))}
