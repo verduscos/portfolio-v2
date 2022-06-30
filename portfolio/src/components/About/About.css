@@ -1,0 +1,9 @@
+#about {
+  /* margin-top: 100px; */
+  margin: 100px 12px 0 12px;
+
+}
+
+#about > img {
+  width: 200px;
+}
