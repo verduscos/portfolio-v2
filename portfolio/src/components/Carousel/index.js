@@ -3,7 +3,7 @@ import { IoIosRadioButtonOff, IoIosRadioButtonOn } from "react-icons/io"
 import ProjectData from "./ProjectData";
 import "./Carousel.css"
 
-function Projects() {
+function Carousel() {
   const indexes = [0, 1, 2, 3, 4];
   const [currentIndex, setCurrentIndex] = useState(0);
   let currentProject = ProjectData[currentIndex];
@@ -48,4 +48,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Carousel;
