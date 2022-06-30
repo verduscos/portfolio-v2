@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 // import Carousel from 'react-bootstrap/Carousel'
-import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa"
+import { IoIosRadioButtonOff, IoIosRadioButtonOn } from "react-icons/io"
 import "./Carousel.css"
 
 import ProjectData from "./ProjectData";
@@ -9,16 +9,16 @@ import ProjectData from "./ProjectData";
 
 function Projects() {
   const indexes = [0, 1, 2, 3, 4];
-  const [index, setIndex] = useState(0);
-  let currentProject = ProjectData[index];
+  const [currentIndex, setCurrentIndex] = useState(0);
+  let currentProject = ProjectData[currentIndex];
 
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (index > ProjectData.length - 2) {
-        setIndex(0);
+      if (currentIndex > ProjectData.length - 2) {
+        setCurrentIndex(0);
       } else {
-        setIndex(index + 1);
+        setCurrentIndex(currentIndex + 1);
       }
     }, 3500);
 
@@ -32,13 +32,21 @@ function Projects() {
   return (
     <div className="Carousel">
       <div className="inner">
-        <div id="overlay">{currentProject.title}</div>
+        <div id="overlay">
+          <p>{currentProject.title}</p>
+        </div>
         <img src={currentProject.image} alt="project image" />
       </div>
 
-      <ul>
+      <ul className="project-btns">
         {indexes.map((index) => (
-          <li value={index} onClick={(e) => setIndex(e.target.value)} >{index}</li>
+          <li value={index} onClick={(e) => setCurrentIndex(index)}>
+            {
+              currentIndex === index ?
+                <IoIosRadioButtonOn size={25} /> :
+                <IoIosRadioButtonOff size={20} />
+            }
+          </li>
         ))}
       </ul>
     </div>
