@@ -1,9 +1,28 @@
 #about {
-  /* margin-top: 100px; */
-  margin: 100px 12px 0 12px;
-
+  display: flex;
+  flex-direction: column;
+  margin: 100px 12px 75px 12px;
 }
 
-#about > img {
-  width: 200px;
+#me {
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  #about {
+    max-width: 1000px;
+    margin: 100px auto 75px auto;
+  }
+  #bio {
+    display: flex;
+    align-items: flex-start;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  #me {
+    width: 300px;
+    margin-left: 15px;
+  }
 }
