@@ -8,6 +8,7 @@ import ProjectData from "./ProjectData";
 
 
 function Projects() {
+  const indexes = [0, 1, 2, 3, 4];
   const [index, setIndex] = useState(0);
   let currentProject = ProjectData[index];
 
@@ -19,7 +20,7 @@ function Projects() {
       } else {
         setIndex(index + 1);
       }
-    }, 5000);
+    }, 3500);
 
     return () => {
       if (interval) {
@@ -34,6 +35,12 @@ function Projects() {
         <div id="overlay">{currentProject.title}</div>
         <img src={currentProject.image} alt="project image" />
       </div>
+
+      <ul>
+        {indexes.map((index) => (
+          <li value={index} onClick={(e) => setIndex(e.target.value)} >{index}</li>
+        ))}
+      </ul>
     </div>
   );
 }

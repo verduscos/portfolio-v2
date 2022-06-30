@@ -32,14 +32,21 @@
 }
 
 #overlay {
-  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 562.5px;
+  letter-spacing:1px;
   width: inherit;
   position:absolute;
+
 }
+
+#overlay:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .project {
 
 }
