@@ -1,0 +1,21 @@
+#contact {
+  margin: 100px 12px 75px 12px;
+  max-width: 600px;
+}
+
+#contact > h1 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+#contact-inner {
+  list-style-type: none;
+  padding: 0;
+}
+
+@media screen and (min-width: 600px) {
+  #contact {
+    margin: 100px auto 75px auto;
+    max-width: 600px;
+  }
+}
