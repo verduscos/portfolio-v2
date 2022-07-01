@@ -22,16 +22,6 @@ function Contact() {
             702-426-6788
           </a>
         </li>
-        {/* <li>
-          <a href="https://github.com/verduscos" target='_blank'>
-            GitHub
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/eddie-verdusco/" target='_blank'>
-            LinkedIn
-          </a>
-        </li> */}
       </ul>
     </div>
   )

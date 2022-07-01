@@ -2,8 +2,6 @@
   width: 100%;
   margin-top: 100px;
   max-width: 1000px;
-  background-color: yellow;
-  height: 800px;
 }
 
 .inner {
@@ -56,6 +54,10 @@
 
 
 @media only screen and (min-width: 600px) {
+  .carousel {
+    margin: 100px auto 0 auto;
+  }
+
   .inner > img {
     height: 562.5px;
   }
