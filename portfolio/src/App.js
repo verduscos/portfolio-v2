@@ -10,6 +10,7 @@ function App() {
         <Route path='about' element={<Main />} />
         <Route path='projects' element={<Main />} />
         <Route path='contact' element={<Main />} />
+        <Route path="project/:projectId" element={<Main />} />
       </Routes>
     </BrowserRouter>
   );

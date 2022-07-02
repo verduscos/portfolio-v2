@@ -4,6 +4,7 @@ import Nav from "../Nav";
 import Carousel from "../Carousel";
 import About from "../About";
 import ProjectGallery from "../ProjectGallery";
+import ProjectPage from "../ProjectPage";
 import Contact from "../Contact";
 import Footer from "../Footer";
 import "./Main.css";
@@ -19,7 +20,10 @@ function Main() {
       setContent(<ProjectGallery />);
     } else if (location.pathname === "/contact") {
       setContent(<Contact />);
-    } else {
+    } else if (location.pathname.startsWith("/project")) {
+      setContent(<ProjectPage />);
+    }
+    else {
       setContent(<Carousel />);
     }
   }, [location])
