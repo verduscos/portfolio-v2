@@ -13,6 +13,19 @@
   padding: 0;
 }
 
+#contact-inner > li > a {
+  text-decoration: none;
+}
+
+#resume {
+  margin-top: 16px;
+}
+
+#resume > svg {
+  margin-left: 5px;
+  margin-bottom: -3px;
+}
+
 @media screen and (min-width: 600px) {
   #contact {
     margin: 100px auto 75px auto;

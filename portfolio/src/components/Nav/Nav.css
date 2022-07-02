@@ -22,7 +22,7 @@
   margin: 15px 0;
 }
 
-a {
+#nav > ul > li > a {
   color: #525960;
   text-decoration: none !important;
 }

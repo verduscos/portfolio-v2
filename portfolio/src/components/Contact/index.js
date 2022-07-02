@@ -1,4 +1,6 @@
 import React from "react";
+import Resume from "../../assets/Verdusco_Eddie_Resume.pdf";
+import { BiLinkExternal } from "react-icons/bi";
 import "./Contact.css"
 
 function Contact() {
@@ -21,6 +23,12 @@ function Contact() {
           <a href="tel:7024266788" target='_blank'>
             702-426-6788
           </a>
+        </li>
+        <li id="resume">
+          <a href={Resume} target='_blank'>
+            View my resume
+          </a>
+          <BiLinkExternal />
         </li>
       </ul>
     </div>
