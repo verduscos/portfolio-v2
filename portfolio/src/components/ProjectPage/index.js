@@ -11,7 +11,21 @@ function ProjectPage() {
 
   return (
     <div id="ProjectPage">
+      <ul>
+        <li>
       <h1>{project?.title}</h1>
+        </li>
+        <li>
+          <img src={project?.image} />
+        </li>
+        <li>
+          <a href="">Live</a>
+          <a href="">Repo</a>
+        </li>
+        <li>
+          {project?.description}
+        </li>
+      </ul>
     </div>
   )
 }
