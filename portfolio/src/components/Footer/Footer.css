@@ -12,8 +12,9 @@
   justify-content: flex-start;
   height: inherit;
   list-style-type: none;
+  margin: 0 auto;
+  max-width: 1000px;
   padding: 0;
-
 }
 
 #footer-inner > li {
@@ -21,11 +22,13 @@
   font-size: 25px;
 }
 
-#footer-inner > li  > a > svg {
-  /* color: #525960;
-  color: red; */
-}
-
 svg {
   color: #525960;
+}
+
+@media screen and (min-width: 800px) {
+  #footer-inner > li {
+    margin-left: 0;
+    margin-right: 15px;
+  }
 }
