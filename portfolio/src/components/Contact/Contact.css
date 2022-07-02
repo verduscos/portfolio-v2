@@ -1,4 +1,5 @@
 #contact {
+  color: #525960;
   margin: 100px 12px 75px 12px;
   max-width: 600px;
 }
@@ -14,16 +15,19 @@
 }
 
 #contact-inner > li > a {
+  color: #525960;
   text-decoration: none;
 }
 
 #resume {
+  border-bottom: 1px solid #525960;
   margin-top: 16px;
+  width: fit-content;
 }
 
 #resume > svg {
-  margin-left: 5px;
   margin-bottom: -3px;
+  margin-left: 5px;
 }
 
 @media screen and (min-width: 600px) {
