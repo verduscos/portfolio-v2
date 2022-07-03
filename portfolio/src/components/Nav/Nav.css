@@ -25,11 +25,13 @@
 #nav > ul > li > a {
   color: #525960;
   text-decoration: none !important;
+  transition-delay: .3s;
+  transition: font-size .3s;
 }
 
-a:hover {
+#nav > ul > li > a:hover {
   color: rgb(23, 23, 23);
-  border-bottom: 1px solid rgb(23, 23, 23);
+  font-size: 18px;
 }
 
 
