@@ -1,4 +1,5 @@
 import React from "react";
+
 import Self from "../../assets/images/personal.jpg";
 import "./About.css";
 

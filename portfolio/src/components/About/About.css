@@ -27,3 +27,14 @@
     margin-left: 15px;
   }
 }
+
+#resume {
+  border-bottom: 1px solid #525960;
+  margin-top: 16px;
+  width: fit-content;
+}
+
+#resume > svg {
+  margin-bottom: -3px;
+  margin-left: 5px;
+}

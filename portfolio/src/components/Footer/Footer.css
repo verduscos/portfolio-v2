@@ -27,7 +27,7 @@
   font-size: 30px;
 }
 
-svg {
+#footer-inner > li > a > * {
   color: #525960;
 }
 

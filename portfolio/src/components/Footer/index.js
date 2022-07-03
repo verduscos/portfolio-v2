@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
+import Resume from "../../assets/Verdusco_Eddie_Resume.pdf";
 import { FiGithub } from "react-icons/fi";
-import { AiOutlineLinkedin, AiOutlineMessage } from "react-icons/ai";
+import { AiOutlineLinkedin, AiOutlineMessage, AiOutlineFilePdf } from "react-icons/ai";
 import "./Footer.css";
 
 function Footer() {
@@ -21,6 +21,11 @@ function Footer() {
         <li>
           <a href="mailto:eduardo.verdusco@yahoo.com">
             <AiOutlineMessage />
+          </a>
+        </li>
+        <li>
+          <a href={Resume} target='_blank'>
+            <AiOutlineFilePdf />
           </a>
         </li>
       </ul>
