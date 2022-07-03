@@ -25,7 +25,7 @@
 #nav > ul > li > a {
   color: #525960;
   text-decoration: none !important;
-  transition-delay: .3s;
+  font-size: 15px;
   transition: font-size .3s;
 }
 

@@ -20,6 +20,11 @@
 #footer-inner > li {
   margin-left: 15px;
   font-size: 25px;
+  transition: font-size .3s;
+}
+
+#footer-inner > li:hover {
+  font-size: 30px;
 }
 
 svg {
