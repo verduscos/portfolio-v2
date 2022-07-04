@@ -17,8 +17,8 @@ function ProjectPage() {
           <img id="project-page-image" src={project?.image} />
         </li>
         <li id="project-links-container">
-          <a className="project-link" href="https://paranormalfiles.herokuapp.com/" target="_blank">Live</a>
-          <a className="project-link" href="https://github.com/verduscos/medium-clone" target="_blank">Repo</a>
+          <a className="project-link" href={project?.link} target="_blank">Live</a>
+          <a className="project-link" href={project?.repo} target="_blank">Repo</a>
         </li>
         <li>
           {project?.description}
