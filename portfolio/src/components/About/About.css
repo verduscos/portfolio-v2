@@ -4,6 +4,12 @@
   margin: 100px 12px 75px 12px;
 }
 
+#about-title {
+  color: #525960;
+  font-size: 24px;
+  margin: 0 12px 12px 12px;
+}
+
 #me {
   margin: 0 auto;
   width: 100%;
