@@ -19,8 +19,12 @@ function ProjectPage() {
         <li id="project-links-container">
           <p><b>Tech:</b> {project?.stack}`</p>
           <div>
-            <a className="project-link" href={project?.link} target="_blank">Live</a>
-            <a className="project-link" href={project?.repo} target="_blank">Repo</a>
+            <b>
+              <a className="project-link" href={project?.link} target="_blank">Live</a>
+            </b>
+            <b>
+              <a className="project-link" href={project?.repo} target="_blank">Repo</a>
+            </b>
           </div>
         </li>
         <li>

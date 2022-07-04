@@ -33,6 +33,10 @@
   margin-right: 15px;
 }
 
+.project-link:hover {
+  border-bottom: 1px solid #525960;
+}
+
 @media screen and (min-width: 800px) {
   #ProjectPage {
     margin: 100px auto 80px auto;
