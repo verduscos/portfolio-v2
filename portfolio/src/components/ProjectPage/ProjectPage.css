@@ -22,7 +22,9 @@
 
 #project-links-container {
   margin-bottom: 15px;
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .project-link {

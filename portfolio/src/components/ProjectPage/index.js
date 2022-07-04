@@ -17,8 +17,11 @@ function ProjectPage() {
           <img id="project-page-image" src={project?.image} />
         </li>
         <li id="project-links-container">
-          <a className="project-link" href={project?.link} target="_blank">Live</a>
-          <a className="project-link" href={project?.repo} target="_blank">Repo</a>
+          <p><b>Tech:</b> {project?.stack}`</p>
+          <div>
+            <a className="project-link" href={project?.link} target="_blank">Live</a>
+            <a className="project-link" href={project?.repo} target="_blank">Repo</a>
+          </div>
         </li>
         <li>
           {project?.description}
