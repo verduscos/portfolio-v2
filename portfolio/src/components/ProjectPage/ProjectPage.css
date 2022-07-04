@@ -1,5 +1,37 @@
 #ProjectPage {
-  background-color: gray;
-
   margin: 100px 12px 80px 12px;
+  max-width: 1000px;
+}
+
+#project-page-inner {
+  padding: 0;
+  list-style-type: none;
+}
+
+#project-page-title {
+  color: #525960;
+  font-size: 24px;
+  margin: 0 12px 12px 12px;
+}
+
+#project-page-image {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+#project-links-container {
+  margin-bottom: 15px;
+}
+
+.project-link {
+  color: #525960;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+@media screen and (min-width: 800px) {
+  #ProjectPage {
+    margin: 100px auto 80px auto;
+  }
 }

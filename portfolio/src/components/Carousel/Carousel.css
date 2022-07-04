@@ -17,8 +17,7 @@
 .carousel-image {
   aspect-ratio: 16/9;
   object-fit: contain;
-  /* width: inherit; */
-
+  width: 100%;
   max-width: 1000px;
 }
 

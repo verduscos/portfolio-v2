@@ -4,23 +4,21 @@ import "./ProjectPage.css";
 
 function ProjectPage() {
   let location = useLocation();
-  let projectId = parseInt(location.pathname.split("/")[2]);
+  let projectId = parseInt(location.pathname.split("/")[2]) - 1;
   let project = ProjectData[projectId];
-
-  // console.log(project.title)
 
   return (
     <div id="ProjectPage">
-      <ul>
+      <ul id="project-page-inner">
         <li>
-      <h1>{project?.title}</h1>
+          <h1 id="project-page-title">{project?.title}</h1>
         </li>
         <li>
-          <img src={project?.image} />
+          <img id="project-page-image" src={project?.image} />
         </li>
-        <li>
-          <a href="">Live</a>
-          <a href="">Repo</a>
+        <li id="project-links-container">
+          <a className="project-link" href="https://paranormalfiles.herokuapp.com/" target="_blank">Live</a>
+          <a className="project-link" href="https://github.com/verduscos/medium-clone" target="_blank">Repo</a>
         </li>
         <li>
           {project?.description}
