@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { IoIosRadioButtonOff, IoIosRadioButtonOn } from "react-icons/io"
 import ProjectData from "../ProjectData";
 import "./Carousel.css"
@@ -28,10 +29,12 @@ function Carousel() {
     <div className="carousel">
       <div className="inner">
         <h1 id="carousel-title">Projects</h1>
-        <div id="overlay">
-          <p>{currentProject.title}</p>
-        </div>
-        <img src={currentProject.image} alt="project image" />
+        <Link to={`/project/${currentProject.id}`}>
+          <div id="overlay">
+            <p>{currentProject.title}</p>
+          </div>
+          <img className="carousel-image" src={currentProject.image} alt="project image" />
+        </Link>
       </div>
 
       <ul className="project-btns">
