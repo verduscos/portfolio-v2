@@ -1,0 +1,46 @@
+#about {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 12px 75px 12px;
+}
+
+#about-title {
+  color: #525960;
+  font-size: 24px;
+  margin: 0 12px 12px 12px;
+}
+
+#me {
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  #about {
+    max-width: 1000px;
+    margin: 100px auto 75px auto;
+    padding: 0 12px;
+  }
+  #bio {
+    display: flex;
+    align-items: flex-start;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  #me {
+    width: 300px;
+    margin-left: 15px;
+  }
+}
+
+#resume {
+  border-bottom: 1px solid #525960;
+  margin-top: 16px;
+  width: fit-content;
+}
+
+#resume > svg {
+  margin-bottom: -3px;
+  margin-left: 5px;
+}
