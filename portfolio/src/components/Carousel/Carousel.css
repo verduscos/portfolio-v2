@@ -75,18 +75,20 @@
 
 #new-carousel {
   background-color: green;
-  width: 900px;
+  width: 1400px !important;
+
+  display: flex;
+
 }
 
 .test-img {
-  width: 700px;
+  width: 200px;
   height: 400px;
   object-fit: cover;
-  position:  absolute
+  /* position:  absolute */
 }
 
-.project-1 {
-  /* width: 500px !important; */
+/* .project-1 {
   margin-left: 0px;
 }
 
@@ -104,4 +106,4 @@
 
 .project-5 {
   margin-left: 200px;
-}
+} */

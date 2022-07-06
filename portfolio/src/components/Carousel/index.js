@@ -9,11 +9,15 @@ function Carousel() {
   const indexes = [0, 1, 2, 3, 4];
   const [currentIndex, setCurrentIndex] = useState(0);
   let currentProject = ProjectData[currentIndex];
+  const [projects, setProjects] = useState([]);
 
-  let projects = ProjectData.filter((project) => project.id !== currentIndex);
+  // let projects = ProjectData.filter((project) => project.id !== currentIndex);
 
-  console.log(currentIndex)
-  console.log(projects)
+  useEffect(() => {
+    let projects = ProjectData.filter((project) => project.id - 1 !== currentIndex);
+    setProjects(projects);
+
+  }, [currentIndex])
 
   // useEffect(() => {
   //   const interval = setInterval(() => {
