@@ -47,30 +47,33 @@ function Carousel() {
         </Link>
       </div> */}
 
-      <ul className="project-btns">
-        {indexes.map((index) => (
-          <li key={index} value={index} onMouseOver={(e) => setCurrentIndex(index)}>
-            {
-              currentIndex === index ?
-                <IoIosRadioButtonOn size={30} /> :
-                <IoIosRadioButtonOff size={20} />
-            }
-          </li>
-        ))}
-      </ul>
 
-      {currentIndex}
+      {/* {currentIndex}
 
-      <div>testing down here, okay</div>
-      <ul id="new-carousel">
+      <div>testing down here, okay</div> */}
 
+      <ul id="carousel">
         {projects.map((project, index) => (
 
-// project-${project.id}
           <img className={`test-img project-${index}`} src={project.image} />
         ))}
 
         <img className={`test-img current-project`} src={currentProject.image} />
+      </ul>
+
+      <ul className="project-btns">
+        {ProjectData.map((project, index) => (
+          <li id="project-li" key={index} value={index} onMouseOver={(e) => setCurrentIndex(index)}>
+            <p id="test">
+              <span id={index === currentIndex ? "test" : null}>
+                {`0${index + 1}.`}
+
+              </span>
+              {project.title}
+
+            </p>
+          </li>
+        ))}
       </ul>
     </div>
   );
