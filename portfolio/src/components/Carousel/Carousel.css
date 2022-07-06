@@ -79,6 +79,7 @@
   height: 500px;
 
   display: flex;
+  align-items: center;
   /* flex-direction: column; */
 }
 
@@ -86,38 +87,65 @@
   width: 700px;
   height: 400px;
   object-fit: cover;
-  position:  absolute
+  position:  absolute;
+
+  /* border: 1px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.project-0 {
+  /* margin-top: 50px !important;
+  margin-left: 20px; */
+  /* margin-left: -90px; */
+  /* height: 300px; */
+  /* margin-left: -50px; */
+  margin-left: -80px;
+  height: 300px;
 }
 
 .project-1 {
   /* margin-top: 50px !important;
   margin-left: 20px; */
-  margin-left: -15px;
-  height: 300px;
+  /* margin-left: -90px; */
+  /* height: 300px; */
+  /* margin-left: -50px; */
+  margin-left: -60px;
+  height: 325px;
 }
 
 .project-2 {
   /* margin-top: 100px;
   margin-left: 40px; */
+  /* margin-left: -70px; */
+  margin-left: -40px;
+  height: 350px;
 }
 
 .project-3 {
   /* margin-top: 150px;
   margin-left: 60px; */
+  margin-left: -20px;
+  height: 375px;
 }
 
 .project-4 {
   /* margin-top: 200px;
   margin-left: 80px; */
+  /* margin-left: -15px; */
+  /* height: 475px; */
 }
 
 .project-5 {
   /* margin-top: 250px;
   margin-left: 100px; */
+  /* margin-left: -15px; */
+  /* height: 475px; */
 }
 
 
 .current-project {
   /* margin-top: 300px;
   margin-left: 120px; */
+  margin-left: 20px;
+  height: 375px;
 }
