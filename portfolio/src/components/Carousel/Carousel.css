@@ -1,11 +1,24 @@
-.carousel {
-  width: 100%;
+.carousel-container {
+ display: flex;
+  align-items: flex-start;
+  width: 1200px;
+  /* background-color: yellow; */
+
   margin-top: 100px;
   max-width: 1200px;
 
-  background-color: red;
-  display: flex;
-  justify-content: space-between;
+  margin: 150px auto 0 auto;
+}
+
+#carousel {
+  margin: 0;
+  width: 100%;
+  /* margin-top: 100px; */
+  /* max-width: 1200px; */
+
+  /* background-color: red; */
+  /* display: flex; */
+  /* justify-content: space-between; */
 }
 
 /* .inner {
@@ -45,12 +58,18 @@
 
 .project-btns {
   list-style: none;
+  margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
+
+}
+
+.project-num {
+  font-size: 18px;
 }
 
 .project-btns > li {
@@ -85,8 +104,12 @@
 
 
 /* testing */
-
 #carousel {
+  background-color: red !important;
+  /* height: 100% !important; */
+}
+
+#carousel-inner {
   height: 500px;
   display: flex;
   align-items: center;
@@ -117,20 +140,16 @@
 }
 
 #test {
-  /* border-bottom:  1px solid black; */
-  background-color: gray;
-  /* text-align: left; */
-  /* text-align: center; */
-  display: flex;
+  /* display: flex; */
   justify-content: flex-start;
 }
 
 #project-li {
-  background-color: blue;
+  /* background-color: blue; */
   width: 250px;
 }
 
-#project-li:hover > p > #test {
+a:hover > #project-li > p > #test {
   border-bottom: 1px solid black;
   margin-left: -150px;
   width: 160px !important;
@@ -151,4 +170,10 @@
   margin-left: 20px;
   height: 400px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+.link {
+  color: #525960;
+  text-decoration: none;
 }

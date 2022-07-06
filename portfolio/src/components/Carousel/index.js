@@ -36,22 +36,7 @@ function Carousel() {
   // })
 
   return (
-    <div className="carousel">
-      {/* <div className="inner">
-        <h1 id="carousel-title">Projects</h1>
-        <Link to={`/project/${currentProject.id}`}>
-          <div id="overlay">
-            <p>{currentProject.title}</p>
-          </div>
-          <img className="carousel-image" src={currentProject.image} alt="project image" />
-        </Link>
-      </div> */}
-
-
-      {/* {currentIndex}
-
-      <div>testing down here, okay</div> */}
-
+    <div className="carousel-container">
       <ul id="carousel">
         {projects.map((project, index) => (
 
@@ -63,16 +48,18 @@ function Carousel() {
 
       <ul className="project-btns">
         {ProjectData.map((project, index) => (
-          <li id="project-li" key={index} value={index} onMouseOver={(e) => setCurrentIndex(index)}>
-            <p id="test">
-              <span id={index === currentIndex ? "test" : null}>
-                {`0${index + 1}.`}
+          <Link className="link" to={`/project/${currentProject.id}`}>
+            <li id="project-li" key={index} value={index} onMouseOver={(e) => setCurrentIndex(index)}>
+              <p id="test">
+                <span id={index === currentIndex ? "test" : null} className="project-num">
+                  {`0${index + 1}.`}
 
-              </span>
-              {project.title}
+                </span>
+                {project.title}
 
-            </p>
-          </li>
+              </p>
+            </li>
+          </Link>
         ))}
       </ul>
     </div>
