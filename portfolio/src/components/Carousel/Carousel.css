@@ -75,35 +75,49 @@
 
 #new-carousel {
   background-color: green;
-  width: 1400px !important;
+  width: 700px;
+  height: 500px;
 
   display: flex;
-
+  /* flex-direction: column; */
 }
 
 .test-img {
-  width: 200px;
+  width: 700px;
   height: 400px;
   object-fit: cover;
-  /* position:  absolute */
+  position:  absolute
 }
 
-/* .project-1 {
-  margin-left: 0px;
+.project-1 {
+  /* margin-top: 50px !important;
+  margin-left: 20px; */
+  margin-left: -15px;
+  height: 300px;
 }
 
 .project-2 {
-  margin-left: 50px;
+  /* margin-top: 100px;
+  margin-left: 40px; */
 }
 
 .project-3 {
-  margin-left: 100px;
+  /* margin-top: 150px;
+  margin-left: 60px; */
 }
 
 .project-4 {
-  margin-left: 150px;
+  /* margin-top: 200px;
+  margin-left: 80px; */
 }
 
 .project-5 {
-  margin-left: 200px;
-} */
+  /* margin-top: 250px;
+  margin-left: 100px; */
+}
+
+
+.current-project {
+  /* margin-top: 300px;
+  margin-left: 120px; */
+}

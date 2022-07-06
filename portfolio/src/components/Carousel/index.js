@@ -10,12 +10,12 @@ function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   let currentProject = ProjectData[currentIndex];
   const [projects, setProjects] = useState([]);
-
+  console.log(projects)
   // let projects = ProjectData.filter((project) => project.id !== currentIndex);
 
   useEffect(() => {
     let projects = ProjectData.filter((project) => project.id - 1 !== currentIndex);
-    setProjects(projects);
+    setProjects(projects.reverse());
 
   }, [currentIndex])
 
@@ -64,13 +64,13 @@ function Carousel() {
       <div>testing down here, okay</div>
       <ul id="new-carousel">
 
-        {projects.map(project => (
+        {projects.map((project, index) => (
 
 // project-${project.id}
-          <img className={`test-img`} src={project.image} />
+          <img className={`test-img project-${index}`} src={project.image} />
         ))}
 
-        <img className={`test-img project-${currentProject.id}`} src={currentProject.image} />
+        <img className={`test-img current-project`} src={currentProject.image} />
       </ul>
     </div>
   );
