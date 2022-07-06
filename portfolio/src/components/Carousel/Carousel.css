@@ -67,3 +67,41 @@
     height: 562.5px;
   }
 }
+
+
+
+
+/* testing */
+
+#new-carousel {
+  background-color: green;
+  width: 900px;
+}
+
+.test-img {
+  width: 700px;
+  height: 400px;
+  object-fit: cover;
+  position:  absolute
+}
+
+.project-1 {
+  /* width: 500px !important; */
+  margin-left: 0px;
+}
+
+.project-2 {
+  margin-left: 50px;
+}
+
+.project-3 {
+  margin-left: 100px;
+}
+
+.project-4 {
+  margin-left: 150px;
+}
+
+.project-5 {
+  margin-left: 200px;
+}
