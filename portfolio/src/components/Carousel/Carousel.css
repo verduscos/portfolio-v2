@@ -1,10 +1,12 @@
 .carousel-container {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.carousel-container-inner {
   display: flex;
-  /* align-items: flex-start; */
   margin: 200px auto 0 auto;
   width: 1300px;
-
-  /* background-color: gray; */
 }
 
 #carousel-title {
@@ -113,6 +115,15 @@ body {
 #test {
   /* display: flex; */
   justify-content: flex-start;
+  width: fit-content;
+  transition: width .3s;
+  transition: border-bottom .2s;
+  border-bottom: 1px solid transparent;
+}
+
+#test:hover {
+  border-bottom: 1px solid black;
+  /* width: fit-content; */
 }
 
 #project-li {

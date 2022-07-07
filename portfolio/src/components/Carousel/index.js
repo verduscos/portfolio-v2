@@ -37,12 +37,14 @@ function Carousel() {
 
   return (
     <div className="carousel-container">
-      {/* <h3>Latest Projects</h3> */}
+      <h1></h1>
+      <div className="carousel-container-inner">
+
       <ul id="carousel">
         {projects.map((project, index) => (
 
           <img className={`test-img project-${index}`} src={project.image} />
-        ))}
+          ))}
 
         <img className={`test-img current-project`} src={currentProject.image} />
       </ul>
@@ -63,6 +65,7 @@ function Carousel() {
           </Link>
         ))}
       </ul>
+        </div>
     </div>
   );
 }
