@@ -18,6 +18,12 @@
   padding: 0;
 }
 
+#nav-author {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
 #nav > ul > li {
   margin: 15px 0;
 }
@@ -45,9 +51,30 @@
 }
 
 @media screen and (min-width: 800px) {
+  #nav {
+    background-color: #fff;
+    border-right: .5px solid #52596038;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 200px;
+    z-index: 1;
+
+  }
+
   #nav > ul {
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
     margin: 0 auto;
     max-width: 1000px;
+
+    flex-direction: column;
+  }
+
+  #self {
+    height: 150px;
+    object-fit: contain;
+    border-radius: 50%;
+    width: 100%;
   }
 }

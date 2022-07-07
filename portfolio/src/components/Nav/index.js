@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import Self from "../../assets/images/personal.jpg";
+// import self from ".."
 import "./Nav.css";
 
 const Nav = () => {
@@ -6,6 +8,10 @@ const Nav = () => {
   return (
     <nav id="nav">
       <ul>
+        <li>
+          <img id="self" src={Self} />
+          <p id="nav-author">Eddie Verdusco</p>
+        </li>
         <li>
           <NavLink  to="/">Home</NavLink>
         </li>
