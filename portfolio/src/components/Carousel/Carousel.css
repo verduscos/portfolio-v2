@@ -29,6 +29,8 @@
 
 }
 
+
+
 .project-num {
   font-size: 18px;
 }
@@ -121,6 +123,7 @@ body {
   transition: width .3s;
   transition: border-bottom .2s;
   border-bottom: 1px solid transparent;
+
 }
 
 #test:hover {
@@ -128,15 +131,23 @@ body {
   /* width: fit-content; */
 }
 
-.highlight {
-  color: #64a19d !important;
-  text-decoration: none;
-  font-weight: bold;
+body{
+  /* background-color: #3aafa9 ; */
 }
 
-#project-li {
+
+.project-li {
   /* background-color: blue; */
   width: 250px;
+  /* color: red; */
+}
+
+.highlight {
+  color: #64a19d !important;
+  color: #3aafa9 !important;
+  /* color: red !important; */
+  text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover > #project-li > p > #test {
@@ -167,5 +178,8 @@ a:hover > #project-li > p > #test {
 .link {
   color: #525960;
   color: black;
+  color: #17252a;
+  /* color: red; */
+  font-weight: bold;
   text-decoration: none;
 }

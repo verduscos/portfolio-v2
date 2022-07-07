@@ -1,5 +1,5 @@
 #nav {
-  background-color: #fff;
+  background-color: #f8f8f8;
   border-bottom: .5px solid #52596038;
   height: 80px;
   position: fixed;
@@ -47,12 +47,12 @@
 
 @media screen and (min-width: 800px) {
   #nav {
-    background-color: #fff;
     border-right: .5px solid #52596038;
+    border: none;
     height: 100%;
     position: fixed;
     top: 0;
-    width: 200px;
+    width: 275px;
   }
 
   #nav > ul {
@@ -66,6 +66,7 @@
 
   #self {
     height: 150px;
+    width: 150px;
     object-fit: contain;
     border-radius: 50%;
     width: 100%;

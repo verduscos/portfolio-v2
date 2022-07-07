@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { IoIosRadioButtonOff, IoIosRadioButtonOn } from "react-icons/io"
-import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
 import ProjectData from "../ProjectData";
 import "./Carousel.css"
 
@@ -11,29 +9,12 @@ function Carousel() {
   let currentProject = ProjectData[currentIndex];
   const [projects, setProjects] = useState([]);
   console.log(projects)
-  // let projects = ProjectData.filter((project) => project.id !== currentIndex);
 
   useEffect(() => {
     let projects = ProjectData.filter((project) => project.id - 1 !== currentIndex);
     setProjects(projects.reverse());
 
   }, [currentIndex])
-
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     if (currentIndex > ProjectData.length - 2) {
-  //       setCurrentIndex(0);
-  //     } else {
-  //       setCurrentIndex(currentIndex + 1);
-  //     }
-  //   }, 3500);
-
-  //   return () => {
-  //     if (interval) {
-  //       clearInterval(interval);
-  //     }
-  //   }
-  // })
 
   return (
     <div className="carousel-container">
@@ -52,7 +33,7 @@ function Carousel() {
       <ul className="project-btns">
         {ProjectData.map((project, index) => (
           <Link className={currentIndex ===  project.id - 1 ? "highlight" : "link"} to={`/project/${currentProject.id}`}>
-            <li id="project-li" key={index} value={index} onMouseOver={(e) => setCurrentIndex(index)}>
+            <li className="project-li" key={index} value={index} onMouseOver={(e) => setCurrentIndex(index)}>
               <p id="test">
                 {/* <span id={index === currentIndex ? "test" : null} className="project-num">
                   {`0${index + 1}.`}
