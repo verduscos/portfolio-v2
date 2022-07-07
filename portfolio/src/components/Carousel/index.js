@@ -37,6 +37,7 @@ function Carousel() {
 
   return (
     <div className="carousel-container">
+      {/* <h3>Latest Projects</h3> */}
       <ul id="carousel">
         {projects.map((project, index) => (
 

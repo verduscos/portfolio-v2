@@ -1,28 +1,10 @@
 .carousel-container {
- display: flex;
-  align-items: flex-start;
-  width: 1200px;
-  /* background-color: yellow; */
+  display: flex;
+  /* align-items: flex-start; */
+  margin: 200px auto 0 auto;
+  width: 1300px;
 
-  margin-top: 100px;
-  max-width: 1200px;
-
-  margin: 150px auto 0 auto;
-}
-
-#carousel {
-  margin: 0;
-  width: 100%;
-  /* margin-top: 100px; */
-  /* max-width: 1200px; */
-
-  /* background-color: red; */
-  /* display: flex; */
-  /* justify-content: space-between; */
-}
-
-/* .inner {
-  width: inherit;
+  /* background-color: gray; */
 }
 
 #carousel-title {
@@ -30,31 +12,6 @@
   font-size: 24px;
   margin: 0 12px 12px 12px;
 }
-
-.carousel-image {
-  aspect-ratio: 16/9;
-  object-fit: contain;
-  width: 100%;
-  max-width: 1000px;
-}
-
-#overlay {
-  color: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;;
-  letter-spacing:1px;
-  position:absolute;
-  transition-duration: .2s;
-  max-width: 1000px;
-  width: 100%;
-}
-
-#overlay:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-} */
 
 .project-btns {
   list-style: none;
@@ -101,42 +58,56 @@
 }
 
 
-
-
-/* testing */
-#carousel {
-  background-color: red !important;
-  /* height: 100% !important; */
-}
-
 #carousel-inner {
   height: 500px;
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
 }
 
 #test {
   /* background-color: gray; */
+  z-index: 1;
   display: flex;
   justify-content: space-between;
 }
 
+body {
+  /* background-color: green; */
+}
+
+
+#carousel {
+  /* margin: 0; */
+  width: 100%;
+  /* margin-top: 100px; */
+  /* max-width: 1200px; */
+
+  /* background-color: red; */
+  /* display: flex; */
+  /* justify-content: space-between; */
+
+  display: flex;
+  align-items: center;
+}
+
 .test-img {
-  width: 700px;
-  height: 400px;
+  width: 900px;
+  height: 450px !important;
   object-fit: cover;
   position:  absolute;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  margin: auto 0;
 }
 
 .project-0 {
   margin-left: -80px;
-  height: 300px;
+  /* margin-top: 50px; */
+  height: 350px !important;
 }
 
 .project-1 {
   margin-left: -60px;
-  height: 325px;
+  height: 375px !important;
 }
 
 #test {
@@ -158,12 +129,13 @@ a:hover > #project-li > p > #test {
 
 .project-2 {
   margin-left: -40px;
-  height: 350px;
+  height: 400px !important;
 }
 
 .project-3 {
   margin-left: -20px;
-  height: 375px;
+  margin-bottom: -50px;
+  height: 425px !important;
 }
 
 .current-project {
@@ -175,5 +147,6 @@ a:hover > #project-li > p > #test {
 
 .link {
   color: #525960;
+  color: black;
   text-decoration: none;
 }
