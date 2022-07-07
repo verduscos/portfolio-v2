@@ -18,35 +18,36 @@ function Carousel() {
 
   return (
     <div id="carousel-container">
-      <h1 id="carousel-title">adf</h1>
+      <div>
+
+        <h1 id="carousel-title">Hi, my name is Eddie Verdusco.</h1>
+        <h3 id="carousel-header">I value the visual feedback of creating clean, usable products and love solving to problems with code.</h3>
+      </div>
       <div id="carousel-container-inner">
 
-      <ul id="carousel">
-        {projects.map((project, index) => (
+        <ul id="carousel">
+          {projects.map((project, index) => (
 
-          <img className={`carousel-project-img project-${index}`} src={project.image} />
+            <img className={`carousel-project-img project-${index}`} src={project.image} />
           ))}
 
-        <img className={`carousel-project-img current-project`} src={currentProject.image} />
-      </ul>
+          <img className={`carousel-project-img current-project`} src={currentProject.image} />
+        </ul>
 
-      <ul className="project-btns">
-        {ProjectData.map((project, index) => (
-          <Link className={currentIndex ===  project.id - 1 ? "highlight" : "link"} to={`/project/${currentProject.id}`}>
-            <li className="project-li" key={index} value={index} onMouseOver={(e) => setCurrentIndex(index)}>
-              <p>
-                {/* <span id={index === currentIndex ? "test" : null} className="project-num">
-                  {`0${index + 1}.`}
+        <ul className="project-btns">
+          {ProjectData.map((project, index) => (
+            <Link className={currentIndex === project.id - 1 ? "highlight" : "link"} to={`/project/${currentProject.id}`}>
+              <li className="project-li" key={index} value={index} onMouseOver={(e) => setCurrentIndex(index)}>
+                <p>
+                  {project.title}
+                </p>
+              </li>
+            </Link>
+          ))}
+        </ul>
+      </div>
 
-                </span> */}
-                {project.title}
 
-              </p>
-            </li>
-          </Link>
-        ))}
-      </ul>
-        </div>
     </div>
   );
 }

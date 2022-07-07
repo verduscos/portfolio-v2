@@ -29,6 +29,12 @@ function Footer() {
           </a>
         </li>
       </ul>
+
+      <ul id="contact-footer">
+        <li>Contact Me</li>
+        <li>Location</li>
+        <li>Email me</li>
+      </ul>
     </footer>
   )
 }

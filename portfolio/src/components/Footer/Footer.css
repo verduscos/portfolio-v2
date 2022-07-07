@@ -4,6 +4,8 @@
   position: fixed;
   width: 100%;
   height: 75px;
+
+  display: flex;
 }
 
 #footer-inner {
@@ -13,7 +15,7 @@
   height: inherit;
   list-style-type: none;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 275px;
   padding: 0;
 }
 
@@ -33,15 +35,18 @@
 
 @media screen and (min-width: 800px) {
   #footer {
+    /* background-color: yellow; */
     background-color: transparent;
     z-index: 1;
   }
 
   #footer-inner {
     max-width: none;
-    width: 200px;
-    margin-left: auto;
+    width: 275px;
+    /* margin-left: auto; */
     margin: 0;
+
+    /* background-color: blue; */
 
     display: flex;
     align-items: center;
@@ -51,5 +56,22 @@
   #footer-inner > li {
     margin-left: 0;
     margin-right: 15px;
+  }
+
+  #contact-footer {
+    /* background-color: green; */
+    /* margin-right: auto; */
+    /* z-index: 100; */
+    /* width: 100%; */
+    width: calc(100% - 295px);
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    background-color: #17252a;
   }
 }
