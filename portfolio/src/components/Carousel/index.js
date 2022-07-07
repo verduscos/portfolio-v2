@@ -51,13 +51,13 @@ function Carousel() {
 
       <ul className="project-btns">
         {ProjectData.map((project, index) => (
-          <Link className="link" to={`/project/${currentProject.id}`}>
+          <Link className={currentIndex ===  project.id - 1 ? "highlight" : "link"} to={`/project/${currentProject.id}`}>
             <li id="project-li" key={index} value={index} onMouseOver={(e) => setCurrentIndex(index)}>
               <p id="test">
-                <span id={index === currentIndex ? "test" : null} className="project-num">
+                {/* <span id={index === currentIndex ? "test" : null} className="project-num">
                   {`0${index + 1}.`}
 
-                </span>
+                </span> */}
                 {project.title}
 
               </p>

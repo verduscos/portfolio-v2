@@ -1,6 +1,8 @@
 .carousel-container {
-  width: fit-content;
   margin: 0 auto;
+  margin-left: 275px;
+
+  /* background-color: gray; */
 }
 
 .carousel-container-inner {
@@ -22,7 +24,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-size: 30px;
+  font-size: 22px;
   font-family: 'Times New Roman', Times, serif;
 
 }
@@ -122,8 +124,14 @@ body {
 }
 
 #test:hover {
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   /* width: fit-content; */
+}
+
+.highlight {
+  color: #64a19d !important;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 #project-li {
