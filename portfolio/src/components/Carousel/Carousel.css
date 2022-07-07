@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
 #carousel-container {
   margin: 0 auto;
   margin-left: 275px;
@@ -24,18 +26,22 @@
   margin: 0 auto;
   width: 1300px;
 
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 #carousel-title {
   color: #525960;
-  font-size: 24px;
-  font-weight: bolder;
+  font-size: 35px;
+  /* font-weight: 900; */
   margin: 0 12px 12px 12px;
+
+  font-family: 'Poppins';
 }
 
 #carousel-header {
-  font-weight: lighter;
+  /* font-weight: lighter; */
+  /* color: gray; */
+  color: #525960;
   font-style: italic;
   letter-spacing: 1.5px;
 }
@@ -45,7 +51,7 @@
   display: flex;
   align-items: center;
 
-  background-color: red;
+  /* background-color: red; */
 }
 
 .carousel-project-img {
@@ -72,7 +78,9 @@
   flex-direction: column;
   justify-content: space-between;
   font-size: 22px;
-  font-family: 'Times New Roman', Times, serif;
+  /* font-family: 'Times New Roman', Times, serif; */
+  /* font-family: 'poppins'; */
+  font-weight: normal;
 }
 
 .project-li {
