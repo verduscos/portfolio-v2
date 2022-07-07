@@ -17,24 +17,24 @@ function Carousel() {
   }, [currentIndex])
 
   return (
-    <div className="carousel-container">
-      <h1></h1>
-      <div className="carousel-container-inner">
+    <div id="carousel-container">
+      <h1 id="carousel-title">adf</h1>
+      <div id="carousel-container-inner">
 
       <ul id="carousel">
         {projects.map((project, index) => (
 
-          <img className={`test-img project-${index}`} src={project.image} />
+          <img className={`carousel-project-img project-${index}`} src={project.image} />
           ))}
 
-        <img className={`test-img current-project`} src={currentProject.image} />
+        <img className={`carousel-project-img current-project`} src={currentProject.image} />
       </ul>
 
       <ul className="project-btns">
         {ProjectData.map((project, index) => (
           <Link className={currentIndex ===  project.id - 1 ? "highlight" : "link"} to={`/project/${currentProject.id}`}>
             <li className="project-li" key={index} value={index} onMouseOver={(e) => setCurrentIndex(index)}>
-              <p id="test">
+              <p>
                 {/* <span id={index === currentIndex ? "test" : null} className="project-num">
                   {`0${index + 1}.`}
 
