@@ -5,6 +5,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  width: 500px;
   z-index: 1;
 }
 
@@ -37,6 +38,16 @@
 .active {
   color: #3aafa9 !important;
   font-weight: bold;
+}
+
+/* testing */
+
+#self {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+  width: 100%;
 }
 
 @media screen and (min-width: 600px) {

@@ -32,7 +32,7 @@ function Main() {
     <div id="main">
       <Nav />
       {content}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

@@ -8,10 +8,10 @@ const Nav = () => {
   return (
     <nav id="nav">
       <ul>
-        <li>
+        {/* <li>
           <img id="self" src={Self} />
           <p id="nav-author">Eddie Verdusco</p>
-        </li>
+        </li> */}
         <li>
           <NavLink  to="/">Home</NavLink>
         </li>
