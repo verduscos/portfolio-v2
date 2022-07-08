@@ -21,7 +21,7 @@ function Carousel() {
       <div id="carousel-header-c">
 
         <h1 id="carousel-title">Hi, my name is  Eddie Verdusco.</h1>
-        <h3 id="carousel-header">I value the visual feedback of creating clean, usable products and love solving to problems with code.</h3>
+        <h3 id="carousel-header">I'm a full-stack software engineer and someone who values the visual feedback of creating clean, usable products.</h3>
       </div>
       <div id="carousel-container-inner">
 
