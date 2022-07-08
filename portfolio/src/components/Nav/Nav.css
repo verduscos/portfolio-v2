@@ -1,5 +1,5 @@
 #nav {
-  background-color: #fff;
+  background-color: #f8f8f8;
   border-bottom: .5px solid #52596038;
   height: 80px;
   position: fixed;
@@ -35,7 +35,8 @@
 }
 
 .active {
-  border-bottom: 1px solid #525960;
+  color: #3aafa9 !important;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 600px) {
@@ -45,9 +46,37 @@
 }
 
 @media screen and (min-width: 800px) {
+  #nav {
+    border-right: .5px solid #52596038;
+    border: none;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 275px;
+  }
+
   #nav > ul {
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
     margin: 0 auto;
     max-width: 1000px;
+
+    flex-direction: column;
+  }
+
+  #self {
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+    border-radius: 50%;
+    width: 100%;
+  }
+
+  #nav-author {
+    color: #525960;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 40px;
   }
 }
