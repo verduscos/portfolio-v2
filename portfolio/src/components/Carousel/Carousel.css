@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
 
 #carousel-container {
   margin: 0 auto;
@@ -17,7 +18,8 @@
   margin-top: 75px;
 }
 
-
+#carousel-header-c {
+  font-family: 'Source Sans Pro', sans-serif;}
 
 
 #carousel-container-inner {
@@ -35,7 +37,7 @@
   /* font-weight: 900; */
   margin: 0 12px 12px 12px;
 
-  font-family: 'Poppins';
+  /* font-family: 'Poppins'; */
 }
 
 #carousel-header {
@@ -43,6 +45,7 @@
   /* color: gray; */
   color: #525960;
   font-style: italic;
+  font-size: 21px;
   letter-spacing: 1.5px;
 }
 

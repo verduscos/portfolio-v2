@@ -18,9 +18,9 @@ function Carousel() {
 
   return (
     <div id="carousel-container">
-      <div>
+      <div id="carousel-header-c">
 
-        <h1 id="carousel-title">Hi, my name is Eddie Verdusco.</h1>
+        <h1 id="carousel-title">Hi, my name is  Eddie Verdusco.</h1>
         <h3 id="carousel-header">I value the visual feedback of creating clean, usable products and love solving to problems with code.</h3>
       </div>
       <div id="carousel-container-inner">
