@@ -5,14 +5,12 @@
   position: fixed;
   top: 0;
   width: 100%;
-  width: 500px;
-  z-index: 1;
 }
 
 #nav > ul {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   height: inherit;
   list-style-type: none;
   margin: 0 12px;
@@ -25,14 +23,26 @@
 
 #nav > ul > li > a {
   color: #525960;
-  text-decoration: none !important;
   font-size: 15px;
+  text-decoration: none !important;
   transition: font-size .3s;
 }
 
 #nav > ul > li > a:hover {
   color: rgb(23, 23, 23);
   font-size: 18px;
+}
+
+#self-container {
+  display: none;
+}
+
+#self {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+  width: 100%;
 }
 
 .active {
@@ -42,13 +52,6 @@
 
 /* testing */
 
-#self {
-  height: 100px;
-  width: 100px;
-  object-fit: contain;
-  border-radius: 50%;
-  width: 100%;
-}
 
 @media screen and (min-width: 600px) {
   #nav > ul {
@@ -75,12 +78,8 @@
     flex-direction: column;
   }
 
-  #self {
-    height: 150px;
-    width: 150px;
-    object-fit: contain;
-    border-radius: 50%;
-    width: 100%;
+  #self-container {
+    display: block;
   }
 
   #nav-author {
