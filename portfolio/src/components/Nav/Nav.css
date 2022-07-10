@@ -80,6 +80,9 @@
 
   #self-container {
     display: block;
+    margin: 40px 0 !important;
+    /* margin-bottom: 40px; */
+    height: fit-content;
   }
 
   #nav-author {
@@ -87,6 +90,6 @@
     font-size: 24px;
     font-weight: bold;
     margin: 0;
-    margin-bottom: 40px;
+    margin-top: 12px;
   }
 }
