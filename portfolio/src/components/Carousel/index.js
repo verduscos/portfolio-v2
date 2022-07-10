@@ -17,6 +17,16 @@ function Carousel() {
 
   }, [currentIndex])
 
+
+
+
+
+
+
+
+
+
+
   return (
     <>
       <div id="carousel-container">
@@ -47,6 +57,7 @@ function Carousel() {
             ))}
           </ul>
         </div>
+
 
 
 
