@@ -1,8 +1,8 @@
 import Resume from "../../assets/Verdusco_Eddie_Resume.pdf";
 import { FiGithub } from "react-icons/fi";
-import { AiOutlineLinkedin, AiOutlineMessage, AiOutlineFilePdf, AiFillHome, AiTwotoneMail } from "react-icons/ai";
+import { AiOutlineLinkedin, AiOutlineMessage, AiOutlineFilePdf, AiTwotoneMail } from "react-icons/ai";
 import { BsFillPhoneFill } from "react-icons/bs";
-
+import { ImLocation } from "react-icons/im"
 import "./Footer.css";
 
 function Footer() {
@@ -38,7 +38,7 @@ function Footer() {
           Contact Me <span>702-426-6788</span>
         </li>
         <li>
-          <AiFillHome size={30} />
+          <ImLocation size={30} />
           Location <span>Las Vegas, NV</span>
         </li>
         <li>
