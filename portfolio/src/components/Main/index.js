@@ -31,7 +31,7 @@ function Main() {
   return (
     <div id="main">
       <Nav />
-      {content}
+      {/* {content} */}
       <Footer />
     </div>
   )
