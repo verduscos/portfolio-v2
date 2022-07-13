@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Nav from "../Nav";
-import AboutSplash from "../Carousel/AboutSplash";
 import Carousel from "../Carousel";
 import About from "../About";
 import ProjectGallery from "../ProjectGallery";
@@ -25,14 +24,14 @@ function Main() {
       setContent(<ProjectPage />);
     }
     else {
-      setContent(<> <AboutSplash /> <Carousel /> </>);
+      setContent(<Carousel />);
     }
   }, [location])
 
   return (
     <div id="main">
       <Nav />
-      {/* {content} */}
+      {content}
       <Footer />
     </div>
   )
