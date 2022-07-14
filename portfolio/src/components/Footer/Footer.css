@@ -1,4 +1,6 @@
 #footer {
+  background-color: #f8f8f8;
+  border-top: .5px solid #52596038;
   bottom: 0;
   position: fixed;
   width: 100%;
@@ -41,6 +43,7 @@
     background-color: #17252a;
     z-index: 1;
     height: 125px;
+    border: none;
   }
 
   #footer-inner {
