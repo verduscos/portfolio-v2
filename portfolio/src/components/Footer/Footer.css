@@ -39,6 +39,10 @@
 }
 
 @media screen and (min-width: 800px) {
+  #footer-inner {
+    display: none;
+  }
+
   #footer {
     background-color: #17252a;
     z-index: 1;
