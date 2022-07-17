@@ -109,18 +109,27 @@
 }
 
 #carousel-mobile {
-  display: none;
+  /* display: none; */
   width: 100%;
 }
 
 @media screen and (min-width: 1000px) {
-  #carousel-container {
-    display: block;
+  #carousel-mobile {
+    /* display: block; */
+    /* margin: 175px auto 0 auto; */
+
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 1500px) {
   #carousel-mobile {
+    display: none;
+    /* margin: 175px auto 0 auto; */
+
+  }
+  #carousel-container {
+    /* margin: 175px auto 0 auto; */
+    text-align: center;
     display: block;
   }
 }
