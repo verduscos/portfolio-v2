@@ -57,15 +57,10 @@ function Carousel() {
             ))}
           </ul>
         </div>
-
-
-
-
-
       </div>
 
       <div id="carousel-mobile">
-            <ProjectGallery />
+        <ProjectGallery />
       </div>
     </>
   );

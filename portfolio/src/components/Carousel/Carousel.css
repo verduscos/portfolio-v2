@@ -109,26 +109,16 @@
 }
 
 #carousel-mobile {
-  /* display: none; */
   width: 100%;
+  margin-bottom: 125px;
 }
 
-@media screen and (min-width: 1000px) {
-  #carousel-mobile {
-    /* display: block; */
-    /* margin: 175px auto 0 auto; */
 
-  }
-}
-
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1700px) {
   #carousel-mobile {
     display: none;
-    /* margin: 175px auto 0 auto; */
-
   }
   #carousel-container {
-    /* margin: 175px auto 0 auto; */
     text-align: center;
     display: block;
   }
