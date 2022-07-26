@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio-v2/static/css/main.22a18558.css",
+    "main.js": "/portfolio-v2/static/js/main.c328feb4.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio-v2/static/js/787.1ed0c42c.chunk.js",
+    "static/media/splash-pf.PNG": "/portfolio-v2/static/media/splash-pf.beb99eb6f3f476c4a554.PNG",
+    "static/media/splash-jj.PNG": "/portfolio-v2/static/media/splash-jj.8002d7ede032c6b84ec2.PNG",
+    "static/media/splash-kotrr.PNG": "/portfolio-v2/static/media/splash-kotrr.4f824a292a85f53b1bc3.PNG",
+    "static/media/splash-qwerty.PNG": "/portfolio-v2/static/media/splash-qwerty.cddd9bd3fb0b5451e3c6.PNG",
+    "static/media/splash-nk.PNG": "/portfolio-v2/static/media/splash-nk.c8ff799ef9ea078d2542.PNG",
+    "static/media/personal.jpg": "/portfolio-v2/static/media/personal.53ff0ac698885c02d485.jpg",
+    "static/media/Verdusco_Eddie_Resume.pdf": "/portfolio-v2/static/media/Verdusco_Eddie_Resume.5a6638af154e3ca31ab3.pdf",
+    "index.html": "/portfolio-v2/index.html",
+    "main.22a18558.css.map": "/portfolio-v2/static/css/main.22a18558.css.map",
+    "main.c328feb4.js.map": "/portfolio-v2/static/js/main.c328feb4.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio-v2/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22a18558.css",
+    "static/js/main.c328feb4.js"
+  ]
+}
