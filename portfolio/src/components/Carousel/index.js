@@ -9,7 +9,6 @@ function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   let currentProject = ProjectData[currentIndex];
   const [projects, setProjects] = useState([]);
-  console.log(projects)
 
   useEffect(() => {
     let projects = ProjectData.filter((project) => project.id - 1 !== currentIndex);
@@ -39,7 +38,7 @@ function Carousel() {
           <ul id="carousel">
             {projects.map((project, index) => (
 
-              <img className={`carousel-project-img project-${index}`} src={project.image} />
+              <img key={project.id} className={`carousel-project-img project-${index}`} src={project.image} />
             ))}
 
             <img className={`carousel-project-img current-project`} src={currentProject.image} />
@@ -47,7 +46,7 @@ function Carousel() {
 
           <ul className="project-btns">
             {ProjectData.map((project, index) => (
-              <Link className={currentIndex === project.id - 1 ? "highlight" : "link"} to={`/project/${currentProject.id}`}>
+              <Link className={currentIndex === project.id - 1 ? "highlight" : "link"} to={`/project/${currentProject.id}`} key={project.id}>
                 <li className="project-li" key={index} value={index} onMouseOver={(e) => setCurrentIndex(index)}>
                   <p>
                     {project.title}

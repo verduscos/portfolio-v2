@@ -40,7 +40,11 @@
   width: fit-content;
 }
 
+#resume > a {
+  text-decoration: none;
+  color: black;
+}
+
 #resume > svg {
-  margin-bottom: -3px;
   margin-left: 5px;
 }
