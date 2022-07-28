@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
+import { AiOutlineFilePdf } from "react-icons/ai";
 import Self from "../../assets/images/personal.jpg";
+import Resume from "../../assets/Verdusco_Eddie_Resume.pdf";
 import "./Nav.css";
 
 const Nav = () => {
@@ -12,7 +14,7 @@ const Nav = () => {
           <p id="nav-author">Eddie Verdusco</p>
         </li>
         <li>
-          <NavLink  to="/">Home</NavLink>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li>
           <NavLink to="/about">About</NavLink>
@@ -22,6 +24,11 @@ const Nav = () => {
         </li>
         <li>
           <NavLink to="/contact">Contact</NavLink>
+        </li>
+        <li>
+          <a href={Resume} target='_blank'>
+            Resume
+          </a>
         </li>
       </ul>
     </nav>

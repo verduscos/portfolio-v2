@@ -1,6 +1,5 @@
-import Resume from "../../assets/Verdusco_Eddie_Resume.pdf";
 import { FiGithub } from "react-icons/fi";
-import { AiOutlineLinkedin, AiOutlineMessage, AiOutlineFilePdf, AiTwotoneMail } from "react-icons/ai";
+import { AiOutlineLinkedin, AiOutlineMessage, AiTwotoneMail } from "react-icons/ai";
 import { BsFillPhoneFill } from "react-icons/bs";
 import { ImLocation } from "react-icons/im"
 import "./Footer.css";
@@ -23,11 +22,6 @@ function Footer() {
         <li>
           <a href="mailto:eduardo.verdusco@yahoo.com">
             <AiOutlineMessage />
-          </a>
-        </li>
-        <li>
-          <a href={Resume} target='_blank'>
-            <AiOutlineFilePdf />
           </a>
         </li>
       </ul>
