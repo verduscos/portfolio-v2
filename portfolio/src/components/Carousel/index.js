@@ -37,11 +37,11 @@ function Carousel() {
 
           <ul id="carousel">
             {projects.map((project, index) => (
-
-              <img key={project.id} className={`carousel-project-img project-${index}`} src={project.image} />
+              <img className={`carousel-project-img project-${index}`} key={project.id} src={project.image} />
             ))}
-
-            <img className={`carousel-project-img current-project`} src={currentProject.image} />
+            <Link  className={`current-project`} to={`/project/${currentProject.id}`}>
+              <img  className={`carousel-project-img`} src={currentProject.image} />
+            </Link>
           </ul>
 
           <ul className="project-btns">
