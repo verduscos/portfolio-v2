@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { AiFillGithub } from "react-icons/ai";
 import ProjectGallery from "../ProjectGallery";
 import ProjectData from "../ProjectData";
 import "./Carousel.css"
 
 function Carousel() {
-  const indexes = [0, 1, 2, 3, 4];
   const [currentIndex, setCurrentIndex] = useState(0);
   let currentProject = ProjectData[currentIndex];
   const [projects, setProjects] = useState([]);
@@ -15,16 +15,6 @@ function Carousel() {
     setProjects(projects.reverse());
 
   }, [currentIndex])
-
-
-
-
-
-
-
-
-
-
 
   return (
     <>
@@ -39,20 +29,29 @@ function Carousel() {
             {projects.map((project, index) => (
               <img className={`carousel-project-img project-${index}`} key={project.id} src={project.image} />
             ))}
-            <Link  className={`current-project`} to={`/project/${currentProject.id}`}>
-              <img  className={`carousel-project-img`} src={currentProject.image} />
+            <Link className={`current-project`} to={`/project/${currentProject.id}`}>
+              <img className={`carousel-project-img`} src={currentProject.image} />
             </Link>
           </ul>
 
           <ul className="project-btns">
             {ProjectData.map((project, index) => (
-              <Link className={currentIndex === project.id - 1 ? "highlight" : "link"} to={`/project/${currentProject.id}`} key={project.id}>
-                <li className="project-li" key={index} value={index} onMouseOver={(e) => setCurrentIndex(index)}>
-                  <p>
-                    {project.title}
-                  </p>
-                </li>
-              </Link>
+              <div id="project-title-container">
+                <Link className={currentIndex === project.id - 1 ? "highlight" : "link"} to={`/project/${currentProject.id}`} key={project.id}>
+                  <li className="project-li" key={index} value={index} onMouseOver={(e) => setCurrentIndex(index)}>
+                    <p>
+                      {project.title}
+                    </p>
+                  </li>
+                </Link>
+
+                {currentIndex === project.id - 1 ?
+                  <a id="gh-link" href={currentProject.link} target="_blank">
+                    <AiFillGithub />
+                  </a>
+                  : null}
+              </div>
+
             ))}
           </ul>
         </div>
