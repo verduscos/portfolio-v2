@@ -10,12 +10,12 @@ function Footer() {
     <footer id="footer">
       <ul id="footer-inner">
         <li>
-          <a href="https://github.com/verduscos" target='_blank'>
+          <a href="https://github.com/verduscos" target='_blank' rel="noreferrer">
             <FiGithub />
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/eddie-verdusco/" target='_blank'>
+          <a href="https://www.linkedin.com/in/eddie-verdusco/" target='_blank' rel="noreferrer">
             <AiOutlineLinkedin />
           </a>
         </li>

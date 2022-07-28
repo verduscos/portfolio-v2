@@ -14,7 +14,7 @@ function About() {
         <img id="me" src={Self} alt="Eddie V" />
       </div>
       <div id="resume">
-        <a href={Resume} target='_blank'>
+        <a href={Resume} target='_blank' rel="noreferrer">
           View my resume
         </a>
         <BiLinkExternal />

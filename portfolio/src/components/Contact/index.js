@@ -15,17 +15,17 @@ function Contact() {
           <p>Let's chat! How to reach me:</p>
         </li>
         <li id="contact-email">
-          <a href="mailto:eduardo.verdusco@yahoo.com">
+          <a href="mailto:eduardo.verdusco@yahoo.com" rel="noreferrer">
             eduardo.verdusco@yahoo.com
           </a>
         </li>
         <li>
-          <a href="tel:7024266788" target='_blank'>
+          <a href="tel:7024266788" target='_blank' rel="noreferrer">
             702-426-6788
           </a>
         </li>
         <li id="resume">
-          <a href={Resume} target='_blank'>
+          <a href={Resume} target='_blank' rel="noreferrer">
             View my resume
           </a>
           <BiLinkExternal />

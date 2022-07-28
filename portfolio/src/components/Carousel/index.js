@@ -27,10 +27,10 @@ function Carousel() {
 
           <ul id="carousel">
             {projects.map((project, index) => (
-              <img className={`carousel-project-img project-${index}`} key={project.id} src={project.image} />
+              <img className={`carousel-project-img project-${index}`} key={project.id} src={project.image} alt="project splash page" />
             ))}
             <Link className={`current-project`} to={`/project/${currentProject.id}`}>
-              <img className={`carousel-project-img`} src={currentProject.image} />
+              <img className={`carousel-project-img`} src={currentProject.image} alt="project splash page" />
             </Link>
           </ul>
 
@@ -46,7 +46,7 @@ function Carousel() {
                 </Link>
 
                 {currentIndex === project.id - 1 ?
-                  <a id="gh-link" href={currentProject.link} target="_blank">
+                  <a id="gh-link" href={currentProject.link} target="_blank" rel="noreferrer">
                     <AiFillGithub />
                   </a>
                   : null}

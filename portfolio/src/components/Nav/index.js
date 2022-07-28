@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import { AiOutlineFilePdf } from "react-icons/ai";
 import Self from "../../assets/images/personal.jpg";
 import Resume from "../../assets/Verdusco_Eddie_Resume.pdf";
 import "./Nav.css";
@@ -10,7 +9,7 @@ const Nav = () => {
     <nav id="nav">
       <ul>
         <li id="self-container">
-          <img id="self" src={Self} />
+          <img id="self" src={Self} alt="author selfie"/>
           <p id="nav-author">Eddie Verdusco</p>
         </li>
         <li>
@@ -26,7 +25,7 @@ const Nav = () => {
           <NavLink to="/contact">Contact</NavLink>
         </li>
         <li>
-          <a href={Resume} target='_blank'>
+          <a href={Resume} target="_blank" rel="noreferrer">
             Resume
           </a>
         </li>
