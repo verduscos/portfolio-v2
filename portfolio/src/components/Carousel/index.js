@@ -37,7 +37,7 @@ function Carousel() {
           <ul className="project-btns">
             {ProjectData.map((project, index) => (
               <div id="project-title-container">
-                <Link className={currentIndex === project.id - 1 ? "highlight" : "link"} to={`/project/${currentProject.id}`} key={project.id}>
+                <Link id="test" className={currentIndex === project.id - 1 ? "highlight" : "link"} to={`/project/${currentProject.id}`} key={project.id}>
                   <li className="project-li" key={index} value={index} onMouseOver={(e) => setCurrentIndex(index)}>
                     <p>
                       {project.title}

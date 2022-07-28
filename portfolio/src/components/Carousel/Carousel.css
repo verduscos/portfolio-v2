@@ -73,7 +73,7 @@
 }
 
 .project-li {
-  width: 250px;
+  /* width: 250px; */
 }
 
 .highlight {
@@ -85,6 +85,11 @@
 .link {
   text-decoration: none;
   color: #17252a;
+}
+
+#test {
+  width: 200px;
+  text-align: center;
 }
 
 /* NOT REVISED */
@@ -116,12 +121,14 @@
 
 #gh-link {
  color: #3aafa9;
+ font-size: 28px;
 }
 
 #project-title-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 275px;
 }
 
 @media screen and (min-width: 1700px) {
