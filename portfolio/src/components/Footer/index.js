@@ -27,17 +27,19 @@ function Footer() {
       </ul>
 
       <ul id="contact-footer">
-        <li>
+        <li className="footer-link">
           <BsFillPhoneFill size={30} />
-          Contact Me <span>702-426-6788</span>
+          Contact Me <span className="white-text">702-426-6788</span>
         </li>
-        <li>
+        <li className="footer-link">
           <ImLocation size={30} />
-          Location <span>Las Vegas, NV</span>
+          Location <span className="white-text">Las Vegas, NV</span>
         </li>
-        <li>
-          <AiTwotoneMail size={30} />
-          Email me <span>em.verdusco@gmail.com</span>
+        <li className="footer-link">
+          <a href="mailto:eduardo.verdusco@yahoo.com" rel="noreferrer">
+            <AiTwotoneMail size={30} />
+            Email me <span className="white-text">em.verdusco@gmail.com</span>
+          </a>
         </li>
       </ul>
     </footer>

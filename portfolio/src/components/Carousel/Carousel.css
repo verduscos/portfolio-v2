@@ -72,10 +72,6 @@
   font-weight: normal;
 }
 
-.project-li {
-  /* width: 250px; */
-}
-
 .highlight {
   color: #3aafa9 !important;
   font-weight: bold;
@@ -89,7 +85,6 @@
   width: 200px;
 }
 
-/* NOT REVISED */
 .project-0 {
   margin-left: -80px;
   height: 350px !important;
