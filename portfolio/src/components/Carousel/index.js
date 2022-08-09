@@ -29,15 +29,15 @@ function Carousel() {
             {projects.map((project, index) => (
               <img className={`carousel-project-img project-${index}`} key={project.id} src={project.image} alt="project splash page" />
             ))}
-            <Link className={`current-project`} to={`/project/${currentProject.id}`}>
+            <Link className={`current-project`} to={`/project/${currentProject.id}`} key={`${currentProject.id}-link`} >
               <img className={`carousel-project-img`} src={currentProject.image} alt="project splash page" />
             </Link>
           </ul>
 
           <ul className="project-btns">
             {ProjectData.map((project, index) => (
-              <div id="project-title-container">
-                <Link id="test" className={currentIndex === project.id - 1 ? "highlight" : "link"} to={`/project/${currentProject.id}`} key={project.id}>
+              <div id="project-title-container" key={`container-${index}`} >
+                <Link className={currentIndex === project.id - 1 ? "highlight" : "link"} to={`/project/${currentProject.id}`} key={project.id}>
                   <li className="project-li" key={index} value={index} onMouseOver={(e) => setCurrentIndex(index)}>
                     <p>
                       {project.title}

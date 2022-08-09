@@ -78,18 +78,15 @@
 
 .highlight {
   color: #3aafa9 !important;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
+  width: 200px;
 }
 
 .link {
-  text-decoration: none;
   color: #17252a;
-}
-
-#test {
+  text-decoration: none;
   width: 200px;
-  text-align: center;
 }
 
 /* NOT REVISED */
