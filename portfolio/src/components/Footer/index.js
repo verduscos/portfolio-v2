@@ -28,8 +28,10 @@ function Footer() {
 
       <ul id="contact-footer">
         <li className="footer-link">
-          <BsFillPhoneFill size={30} />
-          Contact Me <span className="white-text">702-426-6788</span>
+          <a href="tel:7024266788" target='_blank' rel="noreferrer">
+            <BsFillPhoneFill size={30} />
+            Contact Me <span className="white-text">702-426-6788</span>
+          </a>
         </li>
         <li className="footer-link">
           <ImLocation size={30} />
