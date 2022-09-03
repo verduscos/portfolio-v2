@@ -10,16 +10,6 @@ class Carousel extends React.Component {
     super(props)
     this.pictures = ProjectData
   }
-  //   const[currentIndex, setCurrentIndex] = useState(0);
-  //   const[state, setState] = useState(false);
-  //   let currentProject = ProjectData[currentIndex];
-  // const [projects, setProjects] = useState([]);
-
-  // useEffect(() => {
-  //   let projects = ProjectData.filter((project) => project.id - 1 !== currentIndex);
-  //   setProjects(projects.reverse());
-
-  // }, [currentIndex])
 
   componentDidMount() {
     this.props.pictures.forEach((picture) => {
@@ -27,10 +17,6 @@ class Carousel extends React.Component {
         img.src = picture.image;
     });
 }
-
-  // componentDidMount()
-
-
 
   render() {
     return (
