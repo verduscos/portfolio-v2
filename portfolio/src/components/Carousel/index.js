@@ -19,7 +19,6 @@ function Carousel() {
   useEffect(() => {
     let projects = ProjectData.filter((project) => project.id - 1 !== currentIndex);
     setProjects(projects.reverse());
-
   }, [currentIndex])
 
   return (
@@ -30,8 +29,6 @@ function Carousel() {
           <h3 id="carousel-header">I'm a full-stack software engineer and someone who values the visual feedback of creating clean, usable products.</h3>
         </div>
         <div id="carousel-container-inner">
-
-          {loading && <h1>Loading...</h1>}
           <ul id="carousel">
             {projects.map((project, index) => (
               <img className={`carousel-project-img project-${index}`} onLoad={onComplete} onError={onComplete} key={project.id} src={project.image} alt="project splash page" />
