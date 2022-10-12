@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { after } from "underscore"
 import { Link } from "react-router-dom";
 import { AiFillGithub } from "react-icons/ai";
 import ProjectGallery from "../ProjectGallery";
@@ -9,6 +10,11 @@ function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   let currentProject = ProjectData[currentIndex];
   const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const onComplete = after(projects.length, () => {
+    setLoading(false);
+  })
 
   useEffect(() => {
     let projects = ProjectData.filter((project) => project.id - 1 !== currentIndex);
@@ -25,12 +31,13 @@ function Carousel() {
         </div>
         <div id="carousel-container-inner">
 
+          {loading && <h1>Loading...</h1>}
           <ul id="carousel">
             {projects.map((project, index) => (
-              <img className={`carousel-project-img project-${index}`} key={project.id} src={project.image} alt="project splash page" />
+              <img className={`carousel-project-img project-${index}`} onLoad={onComplete} onError={onComplete} key={project.id} src={project.image} alt="project splash page" />
             ))}
             <Link className={`current-project`} to={`/project/${currentProject.id}`} key={`${currentProject.id}-link`} >
-              <img className={`carousel-project-img`} src={currentProject.image} alt="project splash page" />
+              <img className={`carousel-project-img`} src={currentProject.image} alt="project splash page" onLoad={onComplete} onError={onComplete} />
             </Link>
           </ul>
 
