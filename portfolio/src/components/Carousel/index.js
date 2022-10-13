@@ -12,8 +12,6 @@ function Carousel() {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  console.log(projects.length)
-
   useEffect(() => {
     let projects = ProjectData.filter((project) => project.id - 1 !== currentIndex);
     setProjects(projects.reverse());
@@ -22,7 +20,6 @@ function Carousel() {
 
   const onComplete = after(projects.length, () => {
     setLoading(false);
-    console.log("LOADED")
   })
 
   return (
@@ -35,10 +32,10 @@ function Carousel() {
         <div id="carousel-container-inner">
           <ul id="carousel">
             {projects.map((project, index) => (
-              <img className={`carousel-project-img project-${index}`} key={project.id} src={project.image} alt="project splash page" onLoad={onComplete} onError={onComplete} />
+              <img className={`carousel-project-img project-${index}`} key={project.id} src={project.image} alt="project splash page" style={loading ? { display: 'none' } : {}} onLoad={onComplete} onError={onComplete} />
             ))}
             <Link className={`current-project`} to={`/project/${currentProject.id}`} key={`${currentProject.id}-link`} >
-              <img className={`carousel-project-img`} src={currentProject.image} alt="project splash page" onLoad={onComplete} onError={onComplete} />
+              <img className={`carousel-project-img`} src={currentProject.image} alt="project splash page" style={loading ? { display: 'none' } : {}} onLoad={onComplete} onError={onComplete} />
             </Link>
           </ul>
 
