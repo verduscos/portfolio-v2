@@ -19,7 +19,9 @@ function Carousel() {
 
 
   const onComplete = after(projects.length, () => {
-    setLoading(false);
+    setTimeout(() => {
+      setLoading(false);
+    }, [1100])
   })
 
   return (
