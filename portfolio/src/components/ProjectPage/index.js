@@ -17,7 +17,9 @@ function ProjectPage() {
           <Link to="/" className="project-header-tag"><MdKeyboardBackspace /></Link>
         </li>
         <li>
-          <img id="project-page-image" src={project?.image} alt="project splash page" />
+          <a className="project-link" href={project?.link} target="_blank" rel="noreferrer">
+            <img id="project-page-image" src={project?.image} alt="project splash page" />
+          </a>
         </li>
         <li id="project-links-container">
           <p><b>Tech:</b> {project?.stack}</p>
