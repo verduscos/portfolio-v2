@@ -28,6 +28,23 @@
   width: 1300px;
 }
 
+#carousel-loading-icon {
+  margin: 0 auto;
+  color: #3aafa9;
+  animation-name: loading;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes loading {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
 
 #carousel-header {
   color: #525960;

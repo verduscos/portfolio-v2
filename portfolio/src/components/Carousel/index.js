@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { after } from "underscore"
 import { Link } from "react-router-dom";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillGithub, AiOutlineLoading3Quarters } from "react-icons/ai";
 import ProjectGallery from "../ProjectGallery";
 import ProjectData from "../ProjectData";
 import "./Carousel.css"
@@ -21,7 +21,7 @@ function Carousel() {
   const onComplete = after(projects.length, () => {
     setTimeout(() => {
       setLoading(false);
-    }, [1100])
+    }, [2500])
   })
 
   return (
@@ -33,6 +33,7 @@ function Carousel() {
         </div>
         <div id="carousel-container-inner">
           <ul id="carousel">
+            { loading && <div id="carousel-loading-icon"><AiOutlineLoading3Quarters size={50} /></div> }
             {projects.map((project, index) => (
               <img className={`carousel-project-img project-${index}`} key={project.id} src={project.image} alt="project splash page" style={loading ? { display: 'none' } : {}} onLoad={onComplete} onError={onComplete} />
             ))}
