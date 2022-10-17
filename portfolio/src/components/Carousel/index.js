@@ -19,9 +19,7 @@ function Carousel() {
 
 
   const onComplete = after(projects.length, () => {
-    setTimeout(() => {
-      setLoading(false);
-    }, [2500])
+    setLoading(false);
   })
 
   return (
@@ -33,7 +31,7 @@ function Carousel() {
         </div>
         <div id="carousel-container-inner">
           <ul id="carousel">
-            { loading && <div id="carousel-loading-icon"><AiOutlineLoading3Quarters size={50} /></div> }
+            {/* {loading && <div id="carousel-loading-icon"><AiOutlineLoading3Quarters size={50} /></div>} */}
             {projects.map((project, index) => (
               <img className={`carousel-project-img project-${index}`} key={project.id} src={project.image} alt="project splash page" style={loading ? { display: 'none' } : {}} onLoad={onComplete} onError={onComplete} />
             ))}
