@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/verduscos/portfolio/static/css/main.d3c80b99.css",
-    "main.js": "/verduscos/portfolio/static/js/main.909281f8.js",
-    "static/js/787.1ed0c42c.chunk.js": "/verduscos/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/splash-pf.PNG": "/verduscos/portfolio/static/media/splash-pf.beb99eb6f3f476c4a554.PNG",
-    "static/media/splash-jj.PNG": "/verduscos/portfolio/static/media/splash-jj.8002d7ede032c6b84ec2.PNG",
-    "static/media/splash-kotrr.PNG": "/verduscos/portfolio/static/media/splash-kotrr.4f824a292a85f53b1bc3.PNG",
-    "static/media/splash-qwerty.PNG": "/verduscos/portfolio/static/media/splash-qwerty.cddd9bd3fb0b5451e3c6.PNG",
-    "static/media/splash-nk.PNG": "/verduscos/portfolio/static/media/splash-nk.c8ff799ef9ea078d2542.PNG",
-    "static/media/personal.jpg": "/verduscos/portfolio/static/media/personal.53ff0ac698885c02d485.jpg",
-    "static/media/Verdusco_Eddie_Resume.pdf": "/verduscos/portfolio/static/media/Verdusco_Eddie_Resume.5a6638af154e3ca31ab3.pdf",
-    "index.html": "/verduscos/portfolio/index.html",
-    "main.d3c80b99.css.map": "/verduscos/portfolio/static/css/main.d3c80b99.css.map",
-    "main.909281f8.js.map": "/verduscos/portfolio/static/js/main.909281f8.js.map",
-    "787.1ed0c42c.chunk.js.map": "/verduscos/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/portfolio/static/css/main.d3c80b99.css",
+    "main.js": "/portfolio/static/js/main.a8734a27.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/splash-pf.PNG": "/portfolio/static/media/splash-pf.beb99eb6f3f476c4a554.PNG",
+    "static/media/splash-jj.PNG": "/portfolio/static/media/splash-jj.8002d7ede032c6b84ec2.PNG",
+    "static/media/splash-kotrr.PNG": "/portfolio/static/media/splash-kotrr.4f824a292a85f53b1bc3.PNG",
+    "static/media/splash-qwerty.PNG": "/portfolio/static/media/splash-qwerty.cddd9bd3fb0b5451e3c6.PNG",
+    "static/media/splash-nk.PNG": "/portfolio/static/media/splash-nk.c8ff799ef9ea078d2542.PNG",
+    "static/media/personal.jpg": "/portfolio/static/media/personal.53ff0ac698885c02d485.jpg",
+    "static/media/Verdusco_Eddie_Resume.pdf": "/portfolio/static/media/Verdusco_Eddie_Resume.5a6638af154e3ca31ab3.pdf",
+    "index.html": "/portfolio/index.html",
+    "main.d3c80b99.css.map": "/portfolio/static/css/main.d3c80b99.css.map",
+    "main.a8734a27.js.map": "/portfolio/static/js/main.a8734a27.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d3c80b99.css",
-    "static/js/main.909281f8.js"
+    "static/js/main.a8734a27.js"
   ]
 }
