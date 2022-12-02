@@ -42,7 +42,8 @@ const ProjectData = [
   //   stack: "JavaScript, Sequelize, Express, PostgreSQL, PUG, CSS3)"
   // },
   {
-    id: 5,
+    id: 4,
+    // update id once jj is up
     title: "KOTRR",
     image: kotrr,
     link: "https://verduscos.github.io/KOTR-Reviews/",
