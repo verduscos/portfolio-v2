@@ -27,7 +27,7 @@ const ProjectData = [
     id: 3,
     title: "Qwerty",
     image: qwerty,
-    link: "https://qwerty2022.herokuapp.com/",
+    link: "https://qwertyshop.herokuapp.com/",
     repo: "https://github.com/verduscos/etsy-group-project",
     description: "Qwerty, a full-stack application inspired by Etsy, is an e-commerce platform for keyboard enthusiasts to buy and sell mechanical keyboard components.",
     stack: "React, Redux, JavaScript, Python, Flask, PostgreSQL, AWS S3, HTML5, CSS3"
