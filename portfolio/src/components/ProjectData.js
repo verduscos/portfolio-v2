@@ -32,15 +32,15 @@ const ProjectData = [
     description: "Qwerty, a full-stack application inspired by Etsy, is an e-commerce platform for keyboard enthusiasts to buy and sell mechanical keyboard components.",
     stack: "React, Redux, JavaScript, Python, Flask, PostgreSQL, AWS S3, HTML5, CSS3"
   },
-  {
-    id: 4,
-    title: "jollyJingles",
-    image: jj,
-    link: "https://jolly-jingles.herokuapp.com/",
-    repo: "https://github.com/verduscos/Jolly-Jingles",
-    description: "jollyJingles, a full-stack application inspired by Goodreads, is an social platform for music enthusiasts to share and review jollyJingles.",
-    stack: "JavaScript, Sequelize, Express, PostgreSQL, PUG, CSS3)"
-  },
+  // {
+  //   id: 4,
+  //   title: "jollyJingles",
+  //   image: jj,
+  //   link: "https://jolly-jingles.herokuapp.com/",
+  //   repo: "https://github.com/verduscos/Jolly-Jingles",
+  //   description: "jollyJingles, a full-stack application inspired by Goodreads, is an social platform for music enthusiasts to share and review jollyJingles.",
+  //   stack: "JavaScript, Sequelize, Express, PostgreSQL, PUG, CSS3)"
+  // },
   {
     id: 5,
     title: "KOTRR",
